@@ -106,7 +106,6 @@ body {
 }
 body.nav-locked { overflow: hidden; }
 img, svg { display: block; max-width: 100%; height: auto; }
-img { font-style: italic; background-repeat: no-repeat; background-size: cover; }
 ul { list-style: none; padding: 0; }
 a { text-decoration: none; color: inherit; }
 button { cursor: pointer; border: none; background: none; font: inherit; color: inherit; }
