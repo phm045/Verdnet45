@@ -109,7 +109,14 @@ img, svg { display: block; max-width: 100%; height: auto; }
 ul { list-style: none; padding: 0; }
 a { text-decoration: none; color: inherit; }
 button { cursor: pointer; border: none; background: none; font: inherit; color: inherit; }
-h1,h2,h3,h4 { text-wrap: balance; line-height: 1.15; font-family: var(--font-display); font-weight: 400; }
+h1,h2,h3,h4 {
+  text-wrap: balance;
+  line-height: 1.15;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-variant-ligatures: no-common-ligatures no-discretionary-ligatures no-historical-ligatures no-contextual;
+  font-feature-settings: "liga" 0, "dlig" 0, "clig" 0, "hlig" 0;
+}
 p, li { text-wrap: pretty; }
 input,select,textarea,button { transition: all var(--transition); }
 :focus-visible { outline: 2px solid var(--color-terra); outline-offset: 3px; border-radius: var(--radius-sm); }
