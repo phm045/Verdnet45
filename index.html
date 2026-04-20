@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="light">
+<html lang="fr" data-theme="light" class="no-js">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Verdnet 45 — Nettoyage à domicile & professionnel</title>
-  <meta name="description" content="Auto-entrepreneur spécialisé dans le nettoyage pour particuliers et professionnels. Produits naturels, travail soigné, devis gratuit." />
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1a120a" media="(prefers-color-scheme: dark)" />
+  <meta name="format-detection" content="telephone=yes" />
+  <title>Verdnet 45 — Nettoyage à domicile & professionnel à Olivet (45)</title>
+  <meta name="description" content="Auto-entrepreneur spécialisé dans le nettoyage pour particuliers et professionnels à Olivet (45160). Produits naturels, travail soigné, devis gratuit sous 2h." />
+  <meta property="og:title" content="Verdnet 45 — Nettoyage à domicile & professionnel" />
+  <meta property="og:description" content="Produits naturels, travail soigné, devis gratuit. Olivet (45160)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="hero-1280.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="hero-1280.webp" type="image/webp" imagesrcset="hero-640.webp 640w, hero-960.webp 960w, hero-1280.webp 1280w, hero-1600.webp 1600w" imagesizes="(max-width: 860px) 100vw, 55vw" fetchpriority="high" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -16,11 +27,11 @@
   <header class="header" id="header">
     <div class="header-inner container">
       <a href="#" class="logo" aria-label="Verdnet 45">
-        <img src="logo.png" alt="" aria-hidden="true" class="logo-img" />
+        <img src="logo.png" alt="" aria-hidden="true" class="logo-img" width="52" height="52" decoding="async" />
         <span class="logo-text">Verd<em>net</em> 45</span>
       </a>
 
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Navigation principale">
         <a href="#services">Services</a>
         <a href="#promesses">Mes promesses</a>
         <a href="#tarifs">Tarifs</a>
@@ -49,7 +60,11 @@
     <!-- HERO : layout asymétrique image gauche / texte droite -->
     <section class="hero">
       <div class="hero-img-wrap">
-        <img src="hero.png" alt="Main gantée essuyant une table en bois dans un intérieur chaleureux" />
+        <picture>
+          <source type="image/webp" srcset="hero-640.webp 640w, hero-960.webp 960w, hero-1280.webp 1280w, hero-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 55vw" />
+          <source type="image/jpeg" srcset="hero-640.jpg 640w, hero-960.jpg 960w, hero-1280.jpg 1280w, hero-1600.jpg 1600w" sizes="(max-width: 860px) 100vw, 55vw" />
+          <img src="hero-1280.jpg" width="2752" height="1536" alt="Main gantée essuyant une table en bois dans un intérieur chaleureux" fetchpriority="high" decoding="async" />
+        </picture>
         <div class="hero-pill">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-terra)"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           Produits 100 % naturels
@@ -96,7 +111,11 @@
           <a href="#contact" class="btn-primary">Me contacter</a>
         </div>
         <div class="intro-img">
-          <img src="products.png" alt="Produits de nettoyage naturels posés sur un linge de lin" />
+          <picture>
+            <source type="image/webp" srcset="products-480.webp 480w, products-720.webp 720w, products-960.webp 960w, products-1280.webp 1280w" sizes="(max-width: 860px) 100vw, (max-width: 1200px) 45vw, 520px" />
+            <source type="image/jpeg" srcset="products-480.jpg 480w, products-720.jpg 720w, products-960.jpg 960w, products-1280.jpg 1280w" sizes="(max-width: 860px) 100vw, (max-width: 1200px) 45vw, 520px" />
+            <img src="products-960.jpg" width="2400" height="1792" alt="Produits de nettoyage naturels posés sur un linge de lin" loading="lazy" decoding="async" />
+          </picture>
         </div>
       </div>
     </section>
@@ -539,7 +558,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="#" class="logo" aria-label="Verdnet 45">
-          <img src="logo.png" alt="" aria-hidden="true" class="logo-img" />
+          <img src="logo.png" alt="" aria-hidden="true" class="logo-img" width="52" height="52" loading="lazy" decoding="async" />
           <span class="logo-text">Verd<em>net</em> 45</span>
         </a>
         <p>Auto-entrepreneur spécialisé dans le nettoyage — chez vous comme au bureau.</p>
@@ -721,25 +740,31 @@
     // Burger
     (function(){
       const btn=document.getElementById('burger'), nav=document.getElementById('mobile-nav');
-      btn.addEventListener('click',()=>{
-        const open=nav.classList.toggle('open');
+      const setState=(open)=>{
+        nav.classList.toggle('open',open);
         btn.classList.toggle('open',open);
         btn.setAttribute('aria-expanded',open);
         nav.setAttribute('aria-hidden',!open);
-      });
-      nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-        nav.classList.remove('open'); btn.classList.remove('open');
-        btn.setAttribute('aria-expanded',false); nav.setAttribute('aria-hidden',true);
-      }));
+        document.body.classList.toggle('nav-locked', open);
+      };
+      btn.addEventListener('click',()=>setState(!nav.classList.contains('open')));
+      nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setState(false)));
+      // Referme si l'utilisateur passe en desktop
+      const mq = window.matchMedia('(min-width: 861px)');
+      mq.addEventListener?.('change', e => { if (e.matches) setState(false); });
     })();
 
-    // Reveal
+    // Reveal (avec filet de sécurité pour ne jamais laisser du contenu caché)
     (function(){
-      if(!('IntersectionObserver' in window)) return;
+      const els = document.querySelectorAll('.reveal');
+      const showAll = () => els.forEach(el => el.classList.add('visible'));
+      if(!('IntersectionObserver' in window)) { showAll(); return; }
       const obs = new IntersectionObserver(entries=>{
-        entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
-      },{threshold:0.1});
-      document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+        entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
+      },{threshold:0.05, rootMargin:'0px 0px -10% 0px'});
+      els.forEach(el=>obs.observe(el));
+      // Filet : après 2s, tout ce qui est encore caché devient visible
+      setTimeout(showAll, 2000);
     })();
 
     // Form
