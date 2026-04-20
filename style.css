@@ -914,3 +914,9 @@ input,select,textarea,button { transition: all var(--transition); }
   background: var(--color-warm);
 }
 .modal-close:hover { background: var(--color-border); color: var(--color-text); }
+
+/* ---- WHATSAPP ---- */
+.cinfo-icon--whatsapp {
+  background: color-mix(in oklab, #25d366 12%, transparent);
+  color: #25d366;
+}
