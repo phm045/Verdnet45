@@ -150,7 +150,7 @@ input,select,textarea,button { transition: all var(--transition); }
   border-radius: var(--radius-full);
   margin-bottom: var(--space-3);
 }
-.tag--light { background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); }
+.tag--light { background: color-mix(in oklab, var(--color-terra) 12%, transparent); color: var(--color-terra); }
 
 /* ---- LOGO ---- */
 .logo { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--color-text); }
