@@ -16,7 +16,7 @@
   <header class="header" id="header">
     <div class="header-inner container">
       <a href="#" class="logo" aria-label="Verdnet 45">
-        <img src="images/logo.png" alt="" aria-hidden="true" class="logo-img" />
+        <img src="logo.png" alt="" aria-hidden="true" class="logo-img" />
         <span class="logo-text">Verd<em>net</em> 45</span>
       </a>
 
@@ -51,7 +51,7 @@
     <!-- HERO : layout asymétrique image gauche / texte droite -->
     <section class="hero">
       <div class="hero-img-wrap">
-        <img src="images/hero.png" alt="Main gantée essuyant une table en bois dans un intérieur chaleureux" />
+        <img src="hero.png" alt="Main gantée essuyant une table en bois dans un intérieur chaleureux" />
         <div class="hero-pill">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-terra)"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           Produits 100 % naturels
@@ -98,7 +98,7 @@
           <a href="#contact" class="btn-primary">Me contacter</a>
         </div>
         <div class="intro-img">
-          <img src="images/products.png" alt="Produits de nettoyage naturels posés sur un linge de lin" />
+          <img src="products.png" alt="Produits de nettoyage naturels posés sur un linge de lin" />
         </div>
       </div>
     </section>
@@ -255,7 +255,7 @@
         <div class="services-list">
 
           <div class="service-row reveal">
-            <div class="service-num">07</div>
+            <div class="service-num">08</div>
             <div class="service-info">
               <h3>Nettoyage de bureaux &amp; locaux professionnels</h3>
               <p>Bureaux, commerces, cabinets — j'assure un environnement sain et accueillant pour vos équipes et vos clients.</p>
@@ -527,12 +527,12 @@
                 <span>Lun – Sam, 9h – 19h</span>
               </div>
             </a>
-            <a href="mailto:dawn882026@outlook.fr" class="cinfo">
+            <a href="mailto:angel882026@outlook.fr" class="cinfo">
               <div class="cinfo-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
               <div>
-                <strong>dawn882026@outlook.fr</strong>
+                <strong>angel882026@outlook.fr</strong>
                 <span>Réponse sous 2h</span>
               </div>
             </a>
@@ -565,7 +565,7 @@
                   <option value="grand">Grand nettoyage &amp; nettoyage de printemps</option>
                   <option value="demenagement">Nettoyage après déménagement</option>
                   <option value="travaux">Nettoyage après travaux</option>
-                    <option value="vehicule">Nettoyage de véhicule</option>
+                  <option value="vehicule">Nettoyage de véhicule</option>
                   <option value="etat">État des lieux &amp; fin de bail</option>
                 </optgroup>
                 <optgroup label="Pour les professionnels">
@@ -597,7 +597,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="#" class="logo" aria-label="Verdnet 45">
-          <img src="images/logo.png" alt="" aria-hidden="true" class="logo-img" />
+          <img src="logo.png" alt="" aria-hidden="true" class="logo-img" />
           <span class="logo-text">Verd<em>net</em> 45</span>
         </a>
         <p>Auto-entrepreneur spécialisé dans le nettoyage — chez vous comme au bureau.</p>
@@ -615,7 +615,7 @@
           <h4>Contact</h4>
           <ul>
             <li><a href="tel:+33638597567">06 38 59 75 67</a></li>
-            <li><a href="mailto:dawn882026@outlook.fr">dawn882026@outlook.fr</a></li>
+            <li><a href="mailto:angel882026@outlook.fr">angel882026@outlook.fr</a></li>
             <li>Lun – Sam : 9h – 19h</li>
           </ul>
         </div>
@@ -698,78 +698,5 @@
     });
   </script>
 
-<script data-pplx-inline-edit>
-(function(){
-  if(window===window.top)return;
-  function inlineAll(orig,clone){
-    if(orig.nodeType!==1)return;
-    try{
-      var cs=getComputedStyle(orig);
-      var t='';
-      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
-      clone.style.cssText=t;
-    }catch(e){}
-    var oc=orig.children,cc=clone.children;
-    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
-  }
-  function stripExternal(clone){
-    var imgs=clone.querySelectorAll('img');
-    for(var i=0;i<imgs.length;i++){
-      var s=imgs[i].getAttribute('src');
-      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
-    }
-    var all=clone.querySelectorAll('*');
-    for(var i=0;i<all.length;i++){
-      var st=all[i].style.cssText;
-      if(st&&st.indexOf('url(')>=0){
-        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
-      }
-    }
-  }
-  var scrollRaf=0;
-  function emitScroll(){
-    scrollRaf=0;
-    var x=window.scrollX||window.pageXOffset||0;
-    var y=window.scrollY||window.pageYOffset||0;
-    window.parent.postMessage({type:'INLINE_EDIT_SCROLL',scrollX:x,scrollY:y},'*');
-  }
-  window.addEventListener('scroll',function(){
-    if(scrollRaf)return;
-    scrollRaf=requestAnimationFrame(emitScroll);
-  },{passive:true,capture:true});
-  emitScroll();
-  window.addEventListener('message',function(e){
-    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
-    var scrollX=window.scrollX||window.pageXOffset||0;
-    var scrollY=window.scrollY||window.pageYOffset||0;
-    var w=window.innerWidth,h=window.innerHeight;
-    try{
-      var clone=document.documentElement.cloneNode(true);
-      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
-      for(var i=0;i<rm.length;i++){rm[i].remove();}
-      inlineAll(document.documentElement,clone);
-      stripExternal(clone);
-      var html=new XMLSerializer().serializeToString(clone);
-      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
-        +'<foreignObject width="100%" height="100%">'
-        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
-        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
-        +html+'</div></div></foreignObject></svg>';
-      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
-      var img=new Image();
-      img.onload=function(){
-        var c=document.createElement('canvas');c.width=w;c.height=h;
-        c.getContext('2d').drawImage(img,0,0);
-        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
-      };
-      img.onerror=function(){
-        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
-      };
-      img.src=svgUrl;
-    }catch(err){
-      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
-    }
-  });
-})();
-</script></body>
+</body>
 </html>
