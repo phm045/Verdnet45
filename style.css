@@ -1,7 +1,7 @@
 /* ============================================
    ÉCLAT NET v2 — Style Chaleureux & Humain
    Palette : crème · terra cotta · brun chaud
-   Typo : Fraunces (display serif) + DM Sans (corps)
+   Typo : Cormorant Garamond (display serif) + Work Sans (corps)
    ============================================ */
 
 :root, [data-theme='light'] {
@@ -17,8 +17,8 @@
   --color-cream:   #faf7f2;
   --color-gold:    #d4956a;
 
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-body:    'DM Sans', 'Helvetica Neue', sans-serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Work Sans', 'Helvetica Neue', sans-serif;
 
   --text-xs:   clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
   --text-sm:   clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
