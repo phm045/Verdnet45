@@ -26,8 +26,11 @@
   <!-- HEADER -->
   <header class="header" id="header">
     <div class="header-inner container">
-      <a href="#" class="logo" aria-label="Verdnet 45">
-        <img src="logo.png" alt="" aria-hidden="true" class="logo-img" width="52" height="52" decoding="async" />
+      <a href="#top" class="logo" aria-label="Verdnet 45 - retour en haut de page">
+        <picture>
+          <source type="image/webp" srcset="logo.webp" />
+          <img src="logo.png" alt="" aria-hidden="true" class="logo-img" width="52" height="52" decoding="async" />
+        </picture>
         <span class="logo-text">Verd<em>net</em> 45</span>
       </a>
 
@@ -38,11 +41,11 @@
       </nav>
 
       <div class="header-right">
-        <button class="btn-theme" data-theme-toggle aria-label="Mode sombre">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <button class="btn-theme" data-theme-toggle aria-label="Basculer le mode sombre" type="button">
+          <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
         <a href="#contact" class="btn-cta">Demander un devis</a>
-        <button class="btn-burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <button class="btn-burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav" type="button">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -66,7 +69,7 @@
           <img src="hero-1280.jpg" width="2752" height="1536" alt="Main gantée essuyant une table en bois dans un intérieur chaleureux" fetchpriority="high" decoding="async" />
         </picture>
         <div class="hero-pill">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-terra)"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="var(--color-terra)"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           Produits 100 % naturels
         </div>
       </div>
@@ -78,7 +81,7 @@
           <a href="#contact" class="btn-primary">Obtenir un devis gratuit</a>
           <a href="#services" class="btn-link">
             Voir mes services
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
         <div class="hero-trust">
@@ -131,7 +134,7 @@
         <div class="services-category reveal">
           <div class="services-category-header">
             <span class="services-category-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </span>
             <h3 class="services-category-title">Pour les particuliers</h3>
             <p class="services-category-desc">Chez vous, à votre rythme, avec des produits naturels.</p>
@@ -142,7 +145,7 @@
           <div class="service-row reveal">
             <div class="service-num">01</div>
             <div class="service-info">
-              <h3>Ménage courant à domicile</h3>
+              <h4>Ménage courant à domicile</h4>
               <p>Un entretien régulier pour que votre intérieur reste impeccable au quotidien, sans que vous ayez à y penser.</p>
               <ul>
                 <li>Dépoussiérage des meubles, étagères et surfaces</li>
@@ -159,7 +162,7 @@
           <div class="service-row reveal">
             <div class="service-num">02</div>
             <div class="service-info">
-              <h3>Aide à domicile &amp; personnes âgées</h3>
+              <h4>Aide à domicile &amp; personnes âgées</h4>
               <p>Un service pensé pour les seniors et les personnes à mobilité réduite — discret, bienveillant, et adapté à votre rythme de vie.</p>
               <ul>
                 <li>Ménage régulier adapté aux besoins spécifiques</li>
@@ -175,7 +178,7 @@
           <div class="service-row reveal">
             <div class="service-num">03</div>
             <div class="service-info">
-              <h3>Grand nettoyage &amp; nettoyage de printemps</h3>
+              <h4>Grand nettoyage &amp; nettoyage de printemps</h4>
               <p>Un nettoyage en profondeur pour repartir sur de bonnes bases — idéal une à deux fois par an.</p>
               <ul>
                 <li>Nettoyage complet de fond en comble</li>
@@ -192,7 +195,7 @@
           <div class="service-row reveal">
             <div class="service-num">04</div>
             <div class="service-info">
-              <h3>Nettoyage après déménagement</h3>
+              <h4>Nettoyage après déménagement</h4>
               <p>Vous quittez ou prenez possession d'un logement ? Je le restitue ou l'accueille dans un état irréprochable.</p>
               <ul>
                 <li>Nettoyage complet de toutes les pièces</li>
@@ -209,7 +212,7 @@
           <div class="service-row reveal">
             <div class="service-num">05</div>
             <div class="service-info">
-              <h3>Nettoyage après travaux</h3>
+              <h4>Nettoyage après travaux</h4>
               <p>Chantier terminé, poussière partout — je prends le relais pour rendre votre logement habitable immédiatement.</p>
               <ul>
                 <li>Élimination de la poussière de chantier sur toutes surfaces</li>
@@ -226,7 +229,7 @@
           <div class="service-row reveal">
             <div class="service-num">06</div>
             <div class="service-info">
-              <h3>Nettoyage de véhicule</h3>
+              <h4>Nettoyage de véhicule</h4>
               <p>Votre voiture mérite aussi un nettoyage soigné — je prends soin de l'intérieur comme de votre domicile, avec des produits adaptés.</p>
               <ul>
                 <li>Aspiration complète : sièges, moquettes, coffre</li>
@@ -243,7 +246,7 @@
           <div class="service-row reveal">
             <div class="service-num">07</div>
             <div class="service-info">
-              <h3>État des lieux &amp; fin de bail</h3>
+              <h4>État des lieux &amp; fin de bail</h4>
               <p>Pour récupérer votre caution sans discussion — je nettoie selon les critères exigés par les agences et propriétaires.</p>
               <ul>
                 <li>Nettoyage conforme aux standards des états des lieux</li>
@@ -263,7 +266,7 @@
         <div class="services-category reveal" style="margin-top: 3.5rem;">
           <div class="services-category-header">
             <span class="services-category-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+              <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
             </span>
             <h3 class="services-category-title">Pour les professionnels</h3>
             <p class="services-category-desc">Bureaux, commerces, cabinets — un espace sain pour vos équipes et vos clients.</p>
@@ -274,7 +277,7 @@
           <div class="service-row reveal">
             <div class="service-num">08</div>
             <div class="service-info">
-              <h3>Nettoyage de bureaux &amp; locaux professionnels</h3>
+              <h4>Nettoyage de bureaux &amp; locaux professionnels</h4>
               <p>Bureaux, commerces, cabinets — j'assure un environnement sain et accueillant pour vos équipes et vos clients.</p>
               <ul>
                 <li>Dépoussiérage bureaux, postes de travail, mobilier</li>
@@ -303,7 +306,7 @@
 
           <div class="engagement reveal">
             <div class="engagement-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <div class="engagement-body">
               <h3>Assuré RC professionnelle</h3>
@@ -313,7 +316,7 @@
 
           <div class="engagement reveal">
             <div class="engagement-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <div class="engagement-body">
               <h3>Ponctuel, toujours</h3>
@@ -323,7 +326,7 @@
 
           <div class="engagement reveal">
             <div class="engagement-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </div>
             <div class="engagement-body">
               <h3>Travail soigné &amp; respect du logement</h3>
@@ -333,7 +336,7 @@
 
           <div class="engagement reveal">
             <div class="engagement-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
             <div class="engagement-body">
               <h3>Devis gratuit, prix clair</h3>
@@ -343,7 +346,7 @@
 
           <div class="engagement reveal">
             <div class="engagement-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
             <div class="engagement-body">
               <h3>Produits naturels &amp; sûrs</h3>
@@ -353,7 +356,7 @@
 
           <div class="engagement reveal">
             <div class="engagement-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
             </div>
             <div class="engagement-body">
               <h3>Satisfaction ou reprise offerte</h3>
@@ -378,7 +381,7 @@
           <!-- Particuliers -->
           <div class="pricing-group">
             <div class="pricing-group-title">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
               Particuliers
             </div>
             <div class="pricing-rows">
@@ -445,7 +448,7 @@
           <!-- Professionnels -->
           <div class="pricing-group">
             <div class="pricing-group-title">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+              <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
               Professionnels
             </div>
             <div class="pricing-rows">
@@ -464,7 +467,7 @@
         </div>
 
         <div class="pricing-note">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
           Tarifs indicatifs pour Olivet et ses alentours (45160). Un devis gratuit et personnalisé est établi selon votre situation réelle — surface, fréquence, accès.
         </div>
       </div>
@@ -481,7 +484,7 @@
           <div class="contact-infos">
             <a href="tel:+33638597567" class="cinfo">
               <div class="cinfo-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </div>
               <div>
                 <strong>06 38 59 75 67</strong>
@@ -490,7 +493,7 @@
             </a>
             <a href="https://wa.me/33638597567" target="_blank" rel="noopener" class="cinfo">
               <div class="cinfo-icon cinfo-icon--whatsapp">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
               </div>
               <div>
                 <strong>WhatsApp</strong>
@@ -542,7 +545,7 @@
           </div>
           <button type="submit" class="btn-submit">
             Envoyer via WhatsApp
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
           </button>
           <p class="form-note">Sans engagement · WhatsApp s'ouvre avec votre demande pré-remplie</p>
           <div class="form-ok" id="form-ok" hidden>
@@ -557,8 +560,11 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a href="#" class="logo" aria-label="Verdnet 45">
-          <img src="logo.png" alt="" aria-hidden="true" class="logo-img" width="52" height="52" loading="lazy" decoding="async" />
+        <a href="#top" class="logo" aria-label="Verdnet 45 - retour en haut de page">
+          <picture>
+            <source type="image/webp" srcset="logo.webp" />
+            <img src="logo.png" alt="" aria-hidden="true" class="logo-img" width="52" height="52" loading="lazy" decoding="async" />
+          </picture>
           <span class="logo-text">Verd<em>net</em> 45</span>
         </a>
         <p>Spécialiste du nettoyage — chez vous comme au bureau.</p>
@@ -593,18 +599,18 @@
 
   <!-- BOUTON WHATSAPP FLOTTANT -->
   <a href="https://wa.me/33638597567" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contacter sur WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    <svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
     <span class="whatsapp-float-label">WhatsApp</span>
   </a>
 
   <!-- MENTIONS LÉGALES -->
-  <div id="mentions-legales" style="display:none" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="ml-title">
-    <div class="modal-overlay" onclick="closeLegal()"></div>
+  <div id="mentions-legales" class="legal-modal" style="display:none" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="ml-title">
+    <div class="modal-overlay" data-close-legal></div>
     <div class="modal-box">
-      <button class="modal-close" onclick="closeLegal()" aria-label="Fermer">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      <button class="modal-close" data-close-legal aria-label="Fermer" type="button">
+        <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
-      <h2>Mentions légales</h2>
+      <h2 id="ml-title">Mentions légales</h2>
       <h3>Éditeur du site</h3>
       <p>Ce site est édité par :<br/>
       <strong>Verdnet 45</strong><br/>
@@ -634,13 +640,13 @@
   </div>
 
   <!-- CONFIDENTIALITÉ -->
-  <div id="confidentialite" style="display:none" aria-hidden="true">
-    <div class="modal-overlay" onclick="closeLegal()"></div>
+  <div id="confidentialite" class="legal-modal" style="display:none" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cf-title">
+    <div class="modal-overlay" data-close-legal></div>
     <div class="modal-box">
-      <button class="modal-close" onclick="closeLegal()" aria-label="Fermer">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      <button class="modal-close" data-close-legal aria-label="Fermer" type="button">
+        <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
-      <h2>Politique de confidentialité</h2>
+      <h2 id="cf-title">Politique de confidentialité</h2>
       <p>Verdnet 45 accorde une grande importance à la protection de vos données personnelles. La présente politique explique quelles données sont collectées, pourquoi, et comment elles sont utilisées.</p>
 
       <h3>Responsable du traitement</h3>
@@ -685,25 +691,40 @@
 
   <script>
     // Modales légales
+    let lastFocusedBeforeModal = null;
     function openLegal(id) {
       const el = document.getElementById(id);
       if (!el) return;
+      lastFocusedBeforeModal = document.activeElement;
       el.style.display = 'flex';
       el.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
+      const closeBtn = el.querySelector('.modal-close');
+      if (closeBtn) closeBtn.focus();
     }
     function closeLegal() {
-      document.querySelectorAll('#mentions-legales, #confidentialite').forEach(el => {
+      document.querySelectorAll('.legal-modal').forEach(el => {
         el.style.display = 'none';
         el.setAttribute('aria-hidden', 'true');
       });
       document.body.style.overflow = '';
+      if (lastFocusedBeforeModal && typeof lastFocusedBeforeModal.focus === 'function') {
+        try { lastFocusedBeforeModal.focus(); } catch(_) {}
+      }
     }
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLegal(); });
     document.querySelectorAll('a[href="#mentions-legales"], a[href="#confidentialite"]').forEach(a => {
       a.addEventListener('click', e => {
         e.preventDefault();
         openLegal(a.getAttribute('href').slice(1));
+      });
+    });
+    // Delegation: ferme quand on clique sur l'overlay ou le bouton close (ou un enfant comme le svg)
+    document.querySelectorAll('.legal-modal').forEach(modal => {
+      modal.addEventListener('click', e => {
+        if (e.target.closest('[data-close-legal]')) {
+          closeLegal();
+        }
       });
     });
 
@@ -714,14 +735,14 @@
       html.setAttribute('data-theme', theme);
       if(btn){
         btn.innerHTML = theme==='dark'
-          ? '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
-          : '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+          ? '<svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+          : '<svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
         btn.addEventListener('click', ()=>{
           theme = theme==='dark'?'light':'dark';
           html.setAttribute('data-theme', theme);
           btn.innerHTML = theme==='dark'
-            ? '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
-            : '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+            ? '<svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+            : '<svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
         });
       }
     })();
@@ -768,45 +789,53 @@
     })();
 
     // Form
-    document.getElementById('contact-form').addEventListener('submit',function(e){
-      e.preventDefault();
-      const btn=this.querySelector('.btn-submit');
+    (function(){
+      const form = document.getElementById('contact-form');
+      if (!form) return;
+      const btn = form.querySelector('.btn-submit');
+      const btnInitialHTML = btn ? btn.innerHTML : '';
 
-      // Récupère les valeurs du formulaire
-      const nom    = this.querySelector('#nom').value.trim();
-      const email  = this.querySelector('#email').value.trim();
-      const tel    = this.querySelector('#tel').value.trim();
-      const type   = this.querySelector('#type').options[this.querySelector('#type').selectedIndex].text;
-      const msg    = this.querySelector('#msg').value.trim();
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
 
-      // Construit le message WhatsApp
-      const lines = [
-        '\uD83D\uDCCB *Nouvelle demande de devis — Verdnet 45*',
-        '',
-        `\uD83D\uDC64 *Nom :* ${nom}`,
-        `\uD83D\uDCE7 *Email :* ${email}`,
-        tel ? `\uD83D\uDCDE *Tél :* ${tel}` : null,
-        `\uD83E\uDDF9 *Prestation :* ${type}`,
-        '',
-        `\uD83D\uDCAC *Message :*`,
-        msg
-      ].filter(l => l !== null).join('\n');
+        // Récupère les valeurs du formulaire
+        const nom     = this.querySelector('#nom').value.trim();
+        const email   = this.querySelector('#email').value.trim();
+        const tel     = this.querySelector('#tel').value.trim();
+        const typeSel = this.querySelector('#type');
+        const type    = typeSel.options[typeSel.selectedIndex].text;
+        const msg     = this.querySelector('#msg').value.trim();
 
-      const waUrl = 'https://wa.me/33638597567?text=' + encodeURIComponent(lines);
+        // Construit le message WhatsApp
+        const lines = [
+          '\uD83D\uDCCB *Nouvelle demande de devis — Verdnet 45*',
+          '',
+          `\uD83D\uDC64 *Nom :* ${nom}`,
+          `\uD83D\uDCE7 *Email :* ${email}`,
+          tel ? `\uD83D\uDCDE *Tél :* ${tel}` : null,
+          `\uD83E\uDDF9 *Prestation :* ${type}`,
+          '',
+          `\uD83D\uDCAC *Message :*`,
+          msg
+        ].filter(l => l !== null).join('\n');
 
-      btn.disabled=true;
-      btn.textContent='Ouverture WhatsApp…';
+        const waUrl = 'https://wa.me/33638597567?text=' + encodeURIComponent(lines);
 
-      // Ouvre WhatsApp dans un nouvel onglet
-      window.open(waUrl, '_blank');
+        btn.disabled = true;
+        btn.textContent = 'Ouverture WhatsApp…';
 
-      setTimeout(()=>{
-        this.reset();
-        btn.disabled=false;
-        btn.innerHTML='Envoyer ma demande <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
-        document.getElementById('form-ok').hidden=false;
-      },800);
-    });
+        // Ouvre WhatsApp dans un nouvel onglet
+        window.open(waUrl, '_blank');
+
+        setTimeout(()=>{
+          this.reset();
+          btn.disabled = false;
+          btn.innerHTML = btnInitialHTML;
+          const ok = document.getElementById('form-ok');
+          if (ok) ok.hidden = false;
+        }, 800);
+      });
+    })();
   </script>
 
 </body>
