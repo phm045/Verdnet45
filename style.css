@@ -920,3 +920,34 @@ input,select,textarea,button { transition: all var(--transition); }
   background: color-mix(in oklab, #25d366 12%, transparent);
   color: #25d366;
 }
+
+/* ---- WHATSAPP FLOTTANT ---- */
+.whatsapp-float {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  z-index: 150;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: #25d366;
+  color: #fff;
+  border-radius: var(--radius-full);
+  padding: 0.75em 1.4em 0.75em 1em;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  font-family: var(--font-body);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(37,211,102,0.45);
+}
+.whatsapp-float svg { flex-shrink: 0; }
+
+@media (max-width: 480px) {
+  .whatsapp-float { padding: 0.75em; border-radius: 50%; width: 54px; height: 54px; justify-content: center; }
+  .whatsapp-float-label { display: none; }
+}
