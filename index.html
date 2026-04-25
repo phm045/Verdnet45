@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="light" class="no-js">
+<html lang="fr" class="no-js">
 <head>
 <meta charset="UTF-8" />
-<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+<script>(function(){var h=document.documentElement;h.classList.remove('no-js');h.classList.add('js');try{var s=localStorage.getItem('vn45-theme');var sysDark=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;h.setAttribute('data-theme',s||(sysDark?'dark':'light'));}catch(e){h.setAttribute('data-theme','light');}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)" />
 <meta name="theme-color" content="#1a120a" media="(prefers-color-scheme: dark)" />
@@ -13,8 +13,12 @@
 <meta property="og:description" content="Produits naturels, travail soigné, devis gratuit. Olivet (45160)." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="hero-1280.jpg" />
-<!-- CORRECTION 1 : summary_large_image sans backslash -->
+<meta property="og:url" content="https://verdnet45.site/" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:site_name" content="Verdnet 45" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://verdnet45.site/" />
 <link rel="icon" type="image/png" href="logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -78,7 +82,6 @@
 
   <div class="hero-content">
     <p class="hero-eyebrow">Olivet (45160)</p>
-    <!-- CORRECTION 2 : <br> au lieu de <br/> (HTML5 standard) -->
     <h1>Un chez-vous<br>propre,<br><em>avec soin.</em></h1>
     <p class="hero-sub">Je prends soin de votre intérieur comme du mien — particuliers et professionnels, avec des produits doux pour votre foyer et la planète.</p>
     <div class="hero-actions">
@@ -135,7 +138,6 @@
       <h2>Ce que je fais pour vous</h2>
     </div>
 
-    <!-- CORRECTION 3 : services-category et services-list correctement imbriqués -->
     <!-- Catégorie : Particuliers -->
     <div class="services-category reveal">
       <div class="services-category-header">
@@ -491,7 +493,6 @@
             <span>Lun – Ven, 9h – 19h</span>
           </div>
         </a>
-        <!-- CORRECTION 4 : target="_blank" sans backslash -->
         <a href="https://wa.me/33638597567" target="_blank" rel="noopener" class="cinfo">
           <div class="cinfo-icon cinfo-icon--whatsapp">
             <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
@@ -507,19 +508,18 @@
     <form class="contact-form" id="contact-form" novalidate>
       <div class="form-row">
         <div class="fg">
-          <!-- CORRECTION 5 : labels sans backslash devant * -->
           <label for="nom">Nom complet *</label>
-          <input type="text" id="nom" name="nom" placeholder="Jean Dupont" required autocomplete="name" />
+          <input type="text" id="nom" name="nom" placeholder="Jean Dupont" required autocomplete="name" maxlength="80" />
         </div>
         <div class="fg">
           <label for="email">Email *</label>
-          <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required autocomplete="email" />
+          <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required autocomplete="email" maxlength="120" />
         </div>
       </div>
       <div class="form-row">
         <div class="fg">
           <label for="tel">Téléphone</label>
-          <input type="tel" id="tel" name="tel" placeholder="06 00 00 00 00" autocomplete="tel" />
+          <input type="tel" id="tel" name="tel" placeholder="06 00 00 00 00" autocomplete="tel" maxlength="20" pattern="[0-9 +().\-]{6,20}" inputmode="tel" />
         </div>
         <div class="fg">
           <label for="type">Type de prestation *</label>
@@ -543,7 +543,7 @@
       </div>
       <div class="fg">
         <label for="msg">Décrivez votre besoin *</label>
-        <textarea id="msg" name="msg" rows="4" placeholder="Surface approximative, fréquence souhaitée, adresse approximative…" required></textarea>
+        <textarea id="msg" name="msg" rows="4" placeholder="Surface approximative, fréquence souhaitée, adresse approximative…" required maxlength="1000"></textarea>
       </div>
       <button type="submit" class="btn-submit">
         Envoyer via WhatsApp
@@ -553,6 +553,13 @@
       <div class="form-ok" id="form-ok" hidden>
         ✓ WhatsApp ouvert ! Envoyez le message pour recevoir votre devis.
       </div>
+      <noscript>
+        <p class="form-note" style="margin-top:1rem">
+          Le formulaire nécessite JavaScript. Vous pouvez nous joindre directement
+          au <a href="tel:+33638597567">06 38 59 75 67</a>
+          ou via <a href="https://wa.me/33638597567" target="_blank" rel="noopener">WhatsApp</a>.
+        </p>
+      </noscript>
     </form>
 
   </div>
@@ -600,7 +607,6 @@
 </footer>
 
 <!-- BOUTON WHATSAPP FLOTTANT -->
-<!-- CORRECTION 4 (suite) : target="_blank" sans backslash -->
 <a href="https://wa.me/33638597567" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contacter sur WhatsApp">
   <svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
   <span class="whatsapp-float-label">WhatsApp</span>
@@ -627,7 +633,6 @@
     <p>Ce site est hébergé par :<br>
     <strong>GitHub Pages</strong><br>
     GitHub, Inc. — 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis<br>
-    <!-- CORRECTION 4 (suite) : target="_blank" sans backslash -->
     <a href="https://pages.github.com" target="_blank" rel="noopener">pages.github.com</a></p>
     <h3>Propriété intellectuelle</h3>
     <p>L'ensemble du contenu de ce site (textes, images, visuels) est la propriété exclusive de Verdnet 45. Toute reproduction, même partielle, est interdite sans autorisation préalable écrite.</p>
@@ -673,7 +678,6 @@
     <h3>Cookies</h3>
     <p>Ce site n'utilise aucun cookie de traçage ou d'analyse. Aucune donnée de navigation n'est collectée à des fins publicitaires.</p>
     <h3>Hébergement</h3>
-    <!-- CORRECTION 4 (suite) : target="_blank" sans backslash -->
     <p>Le site est hébergé sur GitHub Pages (GitHub, Inc., États-Unis). GitHub peut collecter des données techniques de connexion (adresse IP, logs) conformément à sa propre politique de confidentialité disponible sur <a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">docs.github.com</a>.</p>
     <h3>Contact CNIL</h3>
     <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener">Commission Nationale de l'Informatique et des Libertés (CNIL)</a>.</p>
@@ -723,22 +727,44 @@ document.querySelectorAll('.legal-modal').forEach(modal => {
   });
 });
 
-// Theme toggle
+// Theme toggle (persisté dans localStorage + respect prefers-color-scheme)
 (function(){
-  const btn = document.querySelector('[data-theme-toggle]'), html = document.documentElement;
-  let theme = 'light';
-  html.setAttribute('data-theme', theme);
-  if(btn){
-    btn.innerHTML = theme==='dark'
-      ? '<svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
-      : '<svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-    btn.addEventListener('click', ()=>{
-      theme = theme==='dark'?'light':'dark';
-      html.setAttribute('data-theme', theme);
-      btn.innerHTML = theme==='dark'
-        ? '<svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
-        : '<svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  const btn  = document.querySelector('[data-theme-toggle]');
+  const html = document.documentElement;
+  const SUN  = '<svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+  const MOON = '<svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+
+  // Lecture sécurisée de localStorage (mode privé Safari, quota plein → fallback)
+  const readSaved = () => { try { return localStorage.getItem('vn45-theme'); } catch (_) { return null; } };
+  const writeSaved = (v) => { try { localStorage.setItem('vn45-theme', v); } catch (_) {} };
+
+  const sysDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  let theme = readSaved() || (sysDark ? 'dark' : 'light');
+
+  const apply = (t) => {
+    html.setAttribute('data-theme', t);
+    if (btn) {
+      btn.innerHTML = t === 'dark' ? SUN : MOON;
+      btn.setAttribute('aria-label', t === 'dark' ? 'Activer le thème clair' : 'Activer le thème sombre');
+      btn.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
+    }
+  };
+
+  apply(theme);
+
+  if (btn) {
+    btn.addEventListener('click', () => {
+      theme = theme === 'dark' ? 'light' : 'dark';
+      apply(theme);
+      writeSaved(theme);
     });
+  }
+
+  // Suit les changements système si l'utilisateur n'a pas encore choisi manuellement
+  if (window.matchMedia) {
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    const onChange = (e) => { if (!readSaved()) { theme = e.matches ? 'dark' : 'light'; apply(theme); } };
+    mq.addEventListener ? mq.addEventListener('change', onChange) : mq.addListener(onChange);
   }
 })();
 
@@ -781,46 +807,81 @@ document.querySelectorAll('.legal-modal').forEach(modal => {
   setTimeout(showAll, 2000);
 })();
 
-// Form
+// Form (validation renforcée + ouverture WhatsApp)
 (function(){
+  // Constantes centralisées (évite la duplication du numéro)
+  const PHONE_E164_DIGITS = '33638597567'; // pour wa.me (sans le +)
+  const MAX_MSG_LEN = 1000;
+  const MAX_TOTAL_LEN = 1500; // limite raisonnable pour l'URL wa.me
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const CTRL_RE = /[\u0000-\u001F\u007F]/g; // caractères de contrôle invisibles
+
   const form = document.getElementById('contact-form');
   if (!form) return;
   const btn = form.querySelector('.btn-submit');
   const btnInitialHTML = btn ? btn.innerHTML : '';
 
+  const sanitize = (v, max) => String(v || '').replace(CTRL_RE, '').trim().slice(0, max);
+
   form.addEventListener('submit', function(e){
     e.preventDefault();
-    const nom = this.querySelector('#nom').value.trim();
-    const email = this.querySelector('#email').value.trim();
-    const tel = this.querySelector('#tel').value.trim();
+
+    const nom   = sanitize(this.querySelector('#nom').value, 80);
+    const email = sanitize(this.querySelector('#email').value, 120);
+    const tel   = sanitize(this.querySelector('#tel').value, 20);
     const typeSel = this.querySelector('#type');
-    const type = typeSel.options[typeSel.selectedIndex].text;
-    const msg = this.querySelector('#msg').value.trim();
+    const typeVal = typeSel.value;
+    const type    = typeVal ? typeSel.options[typeSel.selectedIndex].text : '';
+    const msg     = sanitize(this.querySelector('#msg').value, MAX_MSG_LEN);
+
+    // Validation explicite (defense en profondeur en plus de HTML5)
+    if (!nom || !email || !typeVal || !msg) {
+      alert('Merci de remplir les champs obligatoires.');
+      return;
+    }
+    if (!EMAIL_RE.test(email)) {
+      alert('Adresse email invalide.');
+      this.querySelector('#email').focus();
+      return;
+    }
 
     const lines = [
       '\uD83D\uDCCB *Nouvelle demande de devis — Verdnet 45*',
       '',
-      `\uD83D\uDC64 *Nom :* ${nom}`,
-      `\uD83D\uDCE7 *Email :* ${email}`,
-      tel ? `\uD83D\uDCDE *Tél :* ${tel}` : null,
-      `\uD83E\uDDF9 *Prestation :* ${type}`,
+      '\uD83D\uDC64 *Nom :* ' + nom,
+      '\uD83D\uDCE7 *Email :* ' + email,
+      tel ? '\uD83D\uDCDE *Tél :* ' + tel : null,
+      '\uD83E\uDDF9 *Prestation :* ' + type,
       '',
-      `\uD83D\uDCAC *Message :*`,
+      '\uD83D\uDCAC *Message :*',
       msg
-    ].filter(l => l !== null).join('\n');
+    ].filter(function(l){ return l !== null; }).join('\n');
 
-    const waUrl = 'https://wa.me/33638597567?text=' + encodeURIComponent(lines);
+    if (lines.length > MAX_TOTAL_LEN) {
+      alert('Message trop long. Merci de raccourcir votre demande.');
+      return;
+    }
 
-    btn.disabled = true;
-    btn.textContent = 'Ouverture WhatsApp…';
+    const waUrl = 'https://wa.me/' + PHONE_E164_DIGITS + '?text=' + encodeURIComponent(lines);
 
-    // CORRECTION 6 : window.open avec '_blank' sans backslash
-    window.open(waUrl, '_blank');
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'Ouverture WhatsApp…';
+    }
 
-    setTimeout(()=>{
-      this.reset();
-      btn.disabled = false;
-      btn.innerHTML = btnInitialHTML;
+    // Ouverture sécurisée (noopener évite que la page cible accède à window.opener)
+    const win = window.open(waUrl, '_blank', 'noopener,noreferrer');
+    if (!win) {
+      // Fallback si popup bloqué (Safari iOS notamment)
+      window.location.href = waUrl;
+    }
+
+    setTimeout(function(){
+      form.reset();
+      if (btn) {
+        btn.disabled = false;
+        btn.innerHTML = btnInitialHTML;
+      }
       const ok = document.getElementById('form-ok');
       if (ok) ok.hidden = false;
     }, 800);
